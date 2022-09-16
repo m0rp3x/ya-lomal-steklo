@@ -1,0 +1,29 @@
+.card {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 #0003;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.card>i{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+
+.card>i::after{
+    content: attr(data-number);
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    top: 2px;
+    font-style: normal;
+    color: #61dafb;
+}
